@@ -70,8 +70,8 @@ def runSimulation(rate_of_arrival,avg_service_time):
         print("Process count: ", process_count);
         print("Completed processes: ", completed_processes);
 
-def main():
-    runSimulation(sys.argv[1],sys.argv[2])
+def main(args):
+    runSimulation(int(args[1]),float(args[2]))
 
 if __name__ == "__main__":
     main(sys.argv)
